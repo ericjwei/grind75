@@ -28,7 +28,7 @@ class Solution:
 
 list1 = ListNode()
 list1p = list1
-for i in [1, 3, 5, 7]:
+for i in [1, 2, 2, 3, 4, 5, 7, 12]:
     list1.next = ListNode(i)
     list1 = list1.next
 list2 = ListNode()
