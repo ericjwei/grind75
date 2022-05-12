@@ -1,1 +1,1 @@
-https://www.techinterviewhandbook.org/grind75?weeks=8&hours=18
+https://www.techinterviewhandbook.org/grind75?weeks=20&hours=8
