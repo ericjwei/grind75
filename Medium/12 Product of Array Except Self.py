@@ -1,11 +1,15 @@
 def productExceptSelf(nums: list[int]) -> list[int]:
-    res = []
-    res.append(1)
-    for n in nums[:-1]:
-        res.append(res[-1] * n)
+    res = [1] * (len(nums))
+    pre = 1
+    for i in range(len(nums)):
+        res[i] = pre
+        pre *= nums[i] 
     post = 1
     for i in range(len(nums) - 1, -1, -1):
-        res[i] = res[i] * post
+        res[i] *= post
         post *= nums[i]
+    return res
+
+
 
 
