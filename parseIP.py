@@ -14,3 +14,15 @@ def checkVulnerabilityScan(inputFile: str) -> None:
     print(m[key])
 
 checkVulnerabilityScan("iplogs.txt")
+
+
+def vulnScan(inputFile: str, outputFile: str) -> None:
+    m: dict[str, set[str]] = {}
+    with open(inputFile, 'r') as file:
+        for line in file:
+            source, destination = line.split('->')
+            ip, port = destination.strip().split(':')
+            if source in m:
+                m[source].add()
+            else:
+                m[source]
