@@ -19,8 +19,8 @@ def numIslands(grid: list[list[str]]) -> int:
 
             for dr, dc in directions:
                 r, c = row + dr, col + dc
-                if ((r) in range(rows) and 
-                    (c) in range(cols) and
+                if (r in range(rows) and 
+                    c in range(cols) and
                     grid[r][c] == "1" and
                     (r, c) not in visit):
                     q.append(r, c)
@@ -34,5 +34,3 @@ def numIslands(grid: list[list[str]]) -> int:
     return islands
 
 
-def numIslands2(grid: list[list[str]]) -> int:
-    return None
